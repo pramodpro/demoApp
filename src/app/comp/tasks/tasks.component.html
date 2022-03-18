@@ -1,0 +1,21 @@
+<div class="tasks">
+    <h2>Tracker</h2>
+    <div class="timer">
+        <div class="timeLabel">{{timer}}</div>
+        <button (click)="toggleTime()"> {{label}}</button>
+    </div>
+    <div class="tasks">
+        <input type="text" id="taskname" (onchange)="getTask($event)">
+        <label> task name</label>
+        <button (click) ="addTask()"> add task</button>
+    </div>
+    <div class="taskList">
+        <ul>
+            <li *ngFor="let task of taskList">
+                <span>{{task.taskName}}</span>
+                <span>{{task.totalTime}}</span>
+                <button (click)="resumeClock(task)"> resume </button>
+            </li>
+        </ul>
+    </div>
+</div>

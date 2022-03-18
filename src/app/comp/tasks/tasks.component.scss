@@ -1,0 +1,21 @@
+.tasks {
+    display: block;
+    position: relative;
+    width: 80%;
+    left:20%;
+    height: 100vh;
+    background-color: aquamarine;
+    border: 2px coral ;
+}
+.taskList {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+li {
+    margin: 5px;
+}
+span {
+    padding: 5px 50px 5px 50px;
+}
